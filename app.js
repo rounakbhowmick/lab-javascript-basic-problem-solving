@@ -2,11 +2,12 @@
 // Progression 1: Names and Input
 
 // 1.1 Create a variable `ProGrad-1` with the driver's name.
-let driver = "ProGrad-1";
+
+let driver = "Rounak";
 // 1.2 Print `"The driver's name is XXXX"`.
 console.log(driver);
 // 1.3 Create a variable `ProGrad-2` with the navigator's name.
-let navigator = "ProGrad-2";
+let navigator = "Bhowmick";
 // 1.4 Print `"The navigator's name is YYYY"`.
 console.log(navigator);
 // Progression 2: Control Statements - 1
@@ -14,10 +15,11 @@ console.log(navigator);
 // - The driver has the longest name, it has XX characters. or
 // - It seems that the navigator has the longest name, it has XX characters. or
 // - Wow, you both have equally long names, XX characters!.
+console.log("Progression 2.1");
 if (driver.length > navigator.length) {
     console.log(`Driver has longest name,it has ${driver.length} character`);
 } else if (navigator.length > driver.length) {
-    console.log(`It seems that the navigator has the longest name, it has ${Navigator.length} character`);
+    console.log(`It seems that the navigator has the longest name, it has ${navigator.length} character`);
 } else {
     console.log(`Wow, you both have equally long names, ${driver.length} characters!.`)
 }
@@ -25,11 +27,14 @@ if (driver.length > navigator.length) {
 // 2.2. Check if the string contains vowels or not.
 // - If it contains vowels, print the name, and also print the vowel letters along with the vowel index. or
 // - print no vowels
-// - for example. In String ProGrad - o and a are vowels. Print ProGrad o a 2 5. 
+// - for example. In String ProGrad - o and a are vowels. Print ProGrad o a 2 5. .
+console.log("Progression 2.2");
+let str = "Rounak";
+let splitstr = str.split("");
 let newstr = " ";
 let count = " ";
 let concat = "no vowels";
-splitstring.forEach((c, index) => {
+splitstr.forEach((c, index) => {
     if (c == 'a' || c == 'e' || c == 'i' ||
         c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' ||
         c == 'O' || c == 'U') {
@@ -45,12 +50,13 @@ console.log(concat);
 // 2.3. Check if the string contains uppercase and lowercase characters Xx
 // - Print the number of upper case characters
 // - Print the number of lower case characters
-let str = "Prograd";
-let splitstring = str.split("");
+console.log("Progression 2.3");
+str = "Rounak";
+splitstr = str.split("");
 let upper = 0;
 let lower = 0;
 
-splitstring.forEach(c => {
+splitstr.forEach(c => {
     if (c >= 'A' && c <= 'Z')
         upper++;
     else if (c >= 'a' && c <= 'z')
@@ -60,8 +66,9 @@ console.log(`Upper case: ${upper}, Lower case: ${lower}`);
 
 // Progression 3: Control Statements - 2
 // 3.1 Print all the characters of the driver's name, separated by a space and in capitals i.e. "ProGrad"
-let driver = "ProGrad";
-let newstr = "";
+console.log("Progression 3.1");
+driver = "ProGrad";
+newstr = "";
 driver = driver.toUpperCase();
 driver = driver.split("")
 driver.forEach(i => {
@@ -69,12 +76,14 @@ driver.forEach(i => {
 })
 console.log(newstr);
 // 3.2 Print all the characters of the navigator's name, in reverse order. i.e. "darGorP"
-let navigator = "ProGrad";
+console.log("Progression 3.2");
+navigator = "ProGrad";
 console.log(navigator.split("").reverse().join(""));
 // 3.3 Merge both the characters such that driver is followed by Navigator like "ProGrad FACEPrep"
 // - Now bring the FACEPrep to the start and send ProGrad to the back like "FACEPrep ProGrad"
+console.log("Progression 3.3");
 let first = "ProGrad";
-let second = "Face Prep"
+let second = "FacePrep"
 let value = first.concat(" " + second);
 console.log(value);
 console.log(second + " " + first);
@@ -89,8 +98,9 @@ console.log(second + " " + first);
 // Generate 3 paragraphs. Store the text in a variable type of string.
 // Make your program count the number of words in the string.
 // Make your program count the number of times the Latin word et appears.
+console.log("Bonus 1");
 let paragraph1 = "Lorem ipsumdolor sit amet consectetur axime dolorem natus ";
-let paragraph2 = "Lorem ipsumdolor sit amet consec elit";
+let paragraph2 = "Lorem ipsumdolor sit amet consec elit ";
 let paragraph3 = "Lorem ipsum dolor sit amet consectetur adipisicing elitObcaecati illo perferendis porro non nobis";
 let total = paragraph1 + paragraph2 + paragraph3;
 let word = 0;
@@ -98,7 +108,7 @@ total = total.split(" ");
 total.forEach(i => {
     word++;
 });
-console.log(word + 1);
+console.log(word);
 // Bonus 2:
 // Create a new variable phraseToCheck and have it contain some string value. Write a code that will check if the value we assigned to this variable is a Palindrome. Here are some examples of palindromes:
 
